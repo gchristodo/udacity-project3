@@ -1,5 +1,5 @@
-# Workflow to ensure whenever a push is made to master/main branch, 
-# then pytest and flake8 run automatically. 
+# Workflow to ensure whenever a push is made to master/main branch,
+# then pytest and flake8 run automatically.
 name: Pytest and Flake8
 
 on:
