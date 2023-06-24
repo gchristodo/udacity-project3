@@ -1,7 +1,7 @@
 from pytest import fixture
-from ..settings import settings
+from settings import settings
 import pandas as pd
-from ..ml.model import load_pkl
+from ml.model import load_pkl
 
 
 @fixture(scope="session")

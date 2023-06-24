@@ -4,8 +4,8 @@ Author: George Christodoulou
 Date: 21/06/23
 """
 
-from ...ml.model import get_inference
-from ...ml.data import process_data
+from ml.model import get_inference
+from ml.data import process_data
 import pandas as pd
 import numpy
 

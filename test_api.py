@@ -4,8 +4,8 @@ Author: George Christodoulou
 Date: 21/06/23
 """
 from fastapi.testclient import TestClient
-from .settings import settings
-from .main import app
+from settings import settings
+from main import app
 import json
 
 
