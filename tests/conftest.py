@@ -17,7 +17,7 @@ def get_model():
     model_pkl = settings["pkl_files"]["model"]
     try:
         my_model = load_pkl(model_save_path, model_pkl)
-    except:
+    except FileNotFoundError:
         my_model = None
     return my_model
 
@@ -28,7 +28,7 @@ def get_encoder():
     encoder_pkl = settings["pkl_files"]["encoder"]
     try:
         my_encoder = load_pkl(model_save_path, encoder_pkl)
-    except:
+    except FileNotFoundError:
         my_encoder = None
     return my_encoder
 
@@ -39,7 +39,7 @@ def get_lb():
     labelizer_pkl = settings["pkl_files"]["labelizer"]
     try:
         my_lb = load_pkl(model_save_path, labelizer_pkl)
-    except:
+    except FileNotFoundError:
         my_lb = None
     return my_lb
 

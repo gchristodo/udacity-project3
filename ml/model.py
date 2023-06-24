@@ -50,7 +50,12 @@ def log_metrics(precision: float, recall: float, fbeta: float):
         recall (float): The recall of the model
         fbeta (float): The fbeta of the model
     """
-    logging.info("precision: %s, recall: %s, fbeta: %s", str(precision), str(recall), str(fbeta))
+    logging.info(
+        "precision: %s, recall: %s, fbeta: %s",
+        str(precision),
+        str(recall),
+        str(fbeta)
+    )
 
 
 def log_cm(confusion_matrix: np.ndarray):
@@ -59,7 +64,10 @@ def log_cm(confusion_matrix: np.ndarray):
     Args:
         confusion_matrix (np.ndarray): The confusion matrix
     """
-    confusion_matrix_string = np.array2string(confusion_matrix, floatmode='unique')
+    confusion_matrix_string = np.array2string(
+        confusion_matrix,
+        floatmode="unique"
+        )
     logging.info("Confusion Matrix: %s", confusion_matrix_string)
 
 
@@ -162,9 +170,8 @@ def train_model(X_train: np.ndarray, y_train: np.ndarray):
     return rf_clf
 
 
-def get_model_metrics(
-    y: np.ndarray, preds: np.ndarray
-) -> Tuple[float, float, float]:
+def get_model_metrics(y: np.ndarray,
+                      preds: np.ndarray) -> Tuple[float, float, float]:
     """
     A function that calculates precision, recall, and F1 for the
     evalution of the RF model.

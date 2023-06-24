@@ -37,27 +37,30 @@ class Input(BaseModel):
 
     class Config:
         schema_extra = {
-                "example": {
-                            "age": 42,
-                            "workclass": "Local-gov",
-                            "fnlgt": 201495,
-                            "education": "Some-college",
-                            "education_num": 10,
-                            "marital_status": "Married-civ-spouse",
-                            "occupation": "Protective-serv",
-                            "relationship": "Husband",
-                            "race": "White",
-                            "sex": "Male",
-                            "capital_gain": 0,
-                            "capital_loss": 0,
-                            "hours_per_week": 72,
-                            "native_country": "United-States"
-                }
+            "example": {
+                "age": 42,
+                "workclass": "Local-gov",
+                "fnlgt": 201495,
+                "education": "Some-college",
+                "education_num": 10,
+                "marital_status": "Married-civ-spouse",
+                "occupation": "Protective-serv",
+                "relationship": "Husband",
+                "race": "White",
+                "sex": "Male",
+                "capital_gain": 0,
+                "capital_loss": 0,
+                "hours_per_week": 72,
+                "native_country": "United-States",
+            }
         }
 
 
-app = FastAPI(title="Predict Income API",
-              description="This is an API that takes a person with specific features and predicts if his/her annual salary is greater than 50K")
+app = FastAPI(
+    title="Predict Income API",
+    description="This is an API that takes a person with specific \
+    features and predicts if his/her annual salary is greater than 50K",
+)
 
 
 # Loading pickles when init for better efficiency.
@@ -106,41 +109,42 @@ async def get_inference(sample: Input):
             error_message = "Model, encoder or labelizer pickles not found"
             print(error_message)
     data = {
-                "age": sample.age,
-                "workclass": sample.workclass,
-                "fnlgt": sample.fnlgt,
-                "education": sample.education,
-                "education_num": sample.education_num,
-                "marital_status": sample.marital_status,
-                "occupation": sample.occupation,
-                "relationship": sample.relationship,
-                "race": sample.race,
-                "sex": sample.sex,
-                "capital_gain": sample.capital_gain,
-                "capital_loss": sample.capital_loss,
-                "hours_per_week": sample.hours_per_week,
-                "native_country": sample.native_country
-            }
+        "age": sample.age,
+        "workclass": sample.workclass,
+        "fnlgt": sample.fnlgt,
+        "education": sample.education,
+        "education_num": sample.education_num,
+        "marital_status": sample.marital_status,
+        "occupation": sample.occupation,
+        "relationship": sample.relationship,
+        "race": sample.race,
+        "sex": sample.sex,
+        "capital_gain": sample.capital_gain,
+        "capital_loss": sample.capital_loss,
+        "hours_per_week": sample.hours_per_week,
+        "native_country": sample.native_country,
+    }
     # Transforming the sample to a single dataframe-row for processing
     sample = pd.DataFrame(data, index=[0])
     # Processing sample
     sample, _, _, _ = process_data(
-                            sample,
-                            categorical_features=settings["cat_features"],
-                            training=False,
-                            encoder=encoder,
-                            lb=lb
-                            )
+        sample,
+        categorical_features=settings["cat_features"],
+        training=False,
+        encoder=encoder,
+        lb=lb,
+    )
     # Get the inference
     prediction = model.predict(sample)
     # Output of prediction is a 1D array either 1 for >50K or 0 for <=50K
     if prediction[0] == 1:
-        prediction = '>50K'
+        prediction = ">50K"
     else:
-        prediction = '<=50K'
+        prediction = "<=50K"
     data["prediction"] = prediction
 
     return data
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     pass

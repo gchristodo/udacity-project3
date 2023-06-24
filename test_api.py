@@ -12,6 +12,7 @@ import json
 # Instantiate the testing client with the app
 client = TestClient(app)
 
+
 # Testing get method
 def test_api_root():
     r = client.get("/")
