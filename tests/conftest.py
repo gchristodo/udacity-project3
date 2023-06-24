@@ -1,3 +1,8 @@
+"""
+This file has the conftest file for the unittests
+Author: George Christodoulou
+Date: 21/06/23
+"""
 from pytest import fixture
 from settings import settings
 import pandas as pd

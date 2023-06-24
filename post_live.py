@@ -1,3 +1,8 @@
+"""
+This is the code for posting from deployed app.
+Author: George Christodoulou
+Date: 24/06/23
+"""
 import requests
 import json
 from settings import settings
