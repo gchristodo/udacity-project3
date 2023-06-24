@@ -12,9 +12,9 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from settings import settings
+from ml.data import process_data
 
-from data import process_data
-from model import (
+from ml.model import (
     train_model,
     get_model_metrics,
     get_inference,

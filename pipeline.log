@@ -1,0 +1,221 @@
+root - INFO - precision: 0.7801857585139319, recall: 0.6428571428571429, fbeta: 0.7048951048951049
+root - INFO - Confusion Matrix: [[4661  284]
+ [ 560 1008]]
+root - INFO - precision: 0.7615384615384615, recall: 0.8389830508474576, fbeta: 0.7983870967741936
+root - INFO - precision: 0.7083333333333334, recall: 0.4722222222222222, fbeta: 0.5666666666666667
+root - INFO - precision: 0.788931788931789, recall: 0.6075322101090188, fbeta: 0.6864501679731243
+root - INFO - precision: 0.7454545454545455, recall: 0.6833333333333333, fbeta: 0.7130434782608696
+root - INFO - precision: 0.8773584905660378, recall: 0.6503496503496503, fbeta: 0.7469879518072289
+root - INFO - precision: 0.7051282051282052, recall: 0.7236842105263158, fbeta: 0.7142857142857143
+root - INFO - precision: 0.7313432835820896, recall: 0.7424242424242424, fbeta: 0.736842105263158
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - Performance on slice workclass
+root - INFO -             feature feature_value  n_samples  precision    recall     fbeta
+0      Self-emp-inc     workclass        222   0.761538  0.838983  0.798387
+1                 ?     workclass        363   0.708333  0.472222  0.566667
+2           Private     workclass       4597   0.788932  0.607532  0.686450
+3         Local-gov     workclass        389   0.745455  0.683333  0.713043
+4  Self-emp-not-inc     workclass        500   0.877358  0.650350  0.746988
+5       Federal-gov     workclass        195   0.705128  0.723684  0.714286
+6         State-gov     workclass        245   0.731343  0.742424  0.736842
+7      Never-worked     workclass          1   1.000000  1.000000  1.000000
+8       Without-pay     workclass          1   1.000000  1.000000  1.000000
+root - INFO - precision: 0.8769230769230769, recall: 0.9047619047619048, fbeta: 0.890625
+root - INFO - precision: 0.695, recall: 0.49642857142857144, fbeta: 0.5791666666666667
+root - INFO - precision: 0.7626050420168067, recall: 0.8306636155606407, fbeta: 0.7951807228915663
+root - INFO - precision: 0.7409638554216867, recall: 0.36283185840707965, fbeta: 0.4871287128712872
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 0.14285714285714285, fbeta: 0.25
+root - INFO - precision: 0.8526315789473684, recall: 0.8901098901098901, fbeta: 0.8709677419354839
+root - INFO - precision: 0.8235294117647058, recall: 0.49411764705882355, fbeta: 0.6176470588235294
+root - INFO - precision: 0.8260869565217391, recall: 0.9156626506024096, fbeta: 0.8685714285714285
+root - INFO - precision: 1.0, recall: 0.45454545454545453, fbeta: 0.625
+root - INFO - precision: 0.8536585365853658, recall: 0.6363636363636364, fbeta: 0.7291666666666666
+root - INFO - precision: 1.0, recall: 0.5, fbeta: 0.6666666666666666
+root - INFO - precision: 1.0, recall: 0.25, fbeta: 0.4
+root - INFO - precision: 1.0, recall: 0.0, fbeta: 0.0
+root - INFO - precision: 1.0, recall: 0.2, fbeta: 0.33333333333333337
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - Performance on slice education
+root - INFO -          feature feature_value  n_samples  precision    recall     fbeta
+0      Doctorate     education         84   0.876923  0.904762  0.890625
+1   Some-college     education       1475   0.695000  0.496429  0.579167
+2      Bachelors     education       1096   0.762605  0.830664  0.795181
+3        HS-grad     education       2120   0.740964  0.362832  0.487129
+4        5th-6th     education         51   1.000000  1.000000  1.000000
+5            9th     education        106   1.000000  0.142857  0.250000
+6        Masters     education        318   0.852632  0.890110  0.870968
+7      Assoc-voc     education        274   0.823529  0.494118  0.617647
+8    Prof-school     education        114   0.826087  0.915663  0.868571
+9           11th     education        244   1.000000  0.454545  0.625000
+10    Assoc-acdm     education        191   0.853659  0.636364  0.729167
+11       1st-4th     education         28   1.000000  0.500000  0.666667
+12          12th     education         79   1.000000  0.250000  0.400000
+13       7th-8th     education        120   1.000000  0.000000  0.000000
+14          10th     education        204   1.000000  0.200000  0.333333
+15     Preschool     education          9   1.000000  1.000000  1.000000
+root - INFO - precision: 0.9411764705882353, recall: 0.3595505617977528, fbeta: 0.5203252032520325
+root - INFO - precision: 0.7715231788079471, recall: 0.6950037285607755, fbeta: 0.7312671635935661
+root - INFO - precision: 0.8421052631578947, recall: 0.3106796116504854, fbeta: 0.4539007092198582
+root - INFO - precision: 1.0, recall: 0.36363636363636365, fbeta: 0.5333333333333333
+root - INFO - precision: 1.0, recall: 0.4, fbeta: 0.5714285714285715
+root - INFO - precision: 1.0, recall: 0.375, fbeta: 0.5454545454545454
+root - INFO - precision: 1.0, recall: 0.0, fbeta: 0.0
+root - INFO - Performance on slice marital_status
+root - INFO -                  feature   feature_value  n_samples  precision    recall     fbeta
+0          Never-married  marital_status       2181   0.941176  0.359551  0.520325
+1     Married-civ-spouse  marital_status       2977   0.771523  0.695004  0.731267
+2               Divorced  marital_status        883   0.842105  0.310680  0.453901
+3                Widowed  marital_status        182   1.000000  0.363636  0.533333
+4  Married-spouse-absent  marital_status         86   1.000000  0.400000  0.571429
+5              Separated  marital_status        199   1.000000  0.375000  0.545455
+6      Married-AF-spouse  marital_status          5   1.000000  0.000000  0.000000
+root - INFO - precision: 0.8031914893617021, recall: 0.8388888888888889, fbeta: 0.8206521739130435
+root - INFO - precision: 0.7083333333333334, recall: 0.4722222222222222, fbeta: 0.5666666666666667
+root - INFO - precision: 0.8179487179487179, recall: 0.8158567774936062, fbeta: 0.8169014084507042
+root - INFO - precision: 0.6759259259259259, recall: 0.3967391304347826, fbeta: 0.5
+root - INFO - precision: 0.6666666666666666, recall: 0.4878048780487805, fbeta: 0.5633802816901409
+root - INFO - precision: 1.0, recall: 0.16666666666666666, fbeta: 0.2857142857142857
+root - INFO - precision: 0.7590361445783133, recall: 0.6176470588235294, fbeta: 0.681081081081081
+root - INFO - precision: 0.7450980392156863, recall: 0.6666666666666666, fbeta: 0.7037037037037038
+root - INFO - precision: 1.0, recall: 0.28846153846153844, fbeta: 0.44776119402985076
+root - INFO - precision: 0.7619047619047619, recall: 0.26229508196721313, fbeta: 0.3902439024390244
+root - INFO - precision: 0.6666666666666666, recall: 0.3333333333333333, fbeta: 0.4444444444444444
+root - INFO - precision: 1.0, recall: 0.42857142857142855, fbeta: 0.6
+root - INFO - precision: 0.7741935483870968, recall: 0.5714285714285714, fbeta: 0.6575342465753424
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - Performance on slice occupation
+root - INFO -               feature feature_value  n_samples  precision    recall     fbeta
+0      Prof-specialty    occupation        818   0.803191  0.838889  0.820652
+1                   ?    occupation        364   0.708333  0.472222  0.566667
+2     Exec-managerial    occupation        808   0.817949  0.815857  0.816901
+3        Craft-repair    occupation        800   0.675926  0.396739  0.500000
+4        Adm-clerical    occupation        819   0.666667  0.487805  0.563380
+5       Other-service    occupation        684   1.000000  0.166667  0.285714
+6               Sales    occupation        718   0.759036  0.617647  0.681081
+7        Tech-support    occupation        189   0.745098  0.666667  0.703704
+8   Machine-op-inspct    occupation        392   1.000000  0.288462  0.447761
+9    Transport-moving    occupation        322   0.761905  0.262295  0.390244
+10  Handlers-cleaners    occupation        252   0.666667  0.333333  0.444444
+11    Farming-fishing    occupation        203   1.000000  0.428571  0.600000
+12    Protective-serv    occupation        121   0.774194  0.571429  0.657534
+13    Priv-house-serv    occupation         20   1.000000  1.000000  1.000000
+14       Armed-Forces    occupation          3   1.000000  1.000000  1.000000
+root - INFO - precision: 0.8, recall: 0.26666666666666666, fbeta: 0.4
+root - INFO - precision: 0.7685009487666035, recall: 0.6887755102040817, fbeta: 0.726457399103139
+root - INFO - precision: 1.0, recall: 0.3333333333333333, fbeta: 0.5
+root - INFO - precision: 1.0, recall: 0.3488372093023256, fbeta: 0.5172413793103449
+root - INFO - precision: 0.8870967741935484, recall: 0.3333333333333333, fbeta: 0.48458149779735676
+root - INFO - precision: 0.7908496732026143, recall: 0.75625, fbeta: 0.7731629392971247
+root - INFO - Performance on slice relationship
+root - INFO -           feature feature_value  n_samples  precision    recall     fbeta
+0       Own-child  relationship       1032   0.800000  0.266667  0.400000
+1         Husband  relationship       2607   0.768501  0.688776  0.726457
+2  Other-relative  relationship        190   1.000000  0.333333  0.500000
+3       Unmarried  relationship        712   1.000000  0.348837  0.517241
+4   Not-in-family  relationship       1636   0.887097  0.333333  0.484581
+5            Wife  relationship        336   0.790850  0.756250  0.773163
+root - INFO - precision: 0.7852865697177075, recall: 0.6510638297872341, fbeta: 0.7119038386971694
+root - INFO - precision: 0.7647058823529411, recall: 0.5591397849462365, fbeta: 0.6459627329192545
+root - INFO - precision: 0.6666666666666666, recall: 0.6153846153846154, fbeta: 0.64
+root - INFO - precision: 0.75, recall: 0.3333333333333333, fbeta: 0.46153846153846156
+root - INFO - precision: 1.0, recall: 0.75, fbeta: 0.8571428571428571
+root - INFO - Performance on slice race
+root - INFO -               feature feature_value  n_samples  precision    recall     fbeta
+0               White          race       5533   0.785287  0.651064  0.711904
+1               Black          race        662   0.764706  0.559140  0.645963
+2  Asian-Pac-Islander          race        200   0.666667  0.615385  0.640000
+3  Amer-Indian-Eskimo          race         73   0.750000  0.333333  0.461538
+4               Other          race         45   1.000000  0.750000  0.857143
+root - INFO - precision: 0.7755656108597285, recall: 0.6477702191987906, fbeta: 0.7059308072487646
+root - INFO - precision: 0.8074866310160428, recall: 0.6163265306122448, fbeta: 0.6990740740740741
+root - INFO - Performance on slice sex
+root - INFO -   feature feature_value  n_samples  precision    recall     fbeta
+0    Male           sex       4355   0.775566  0.647770  0.705931
+1  Female           sex       2158   0.807487  0.616327  0.699074
+root - INFO - precision: 0.7877237851662404, recall: 0.6407766990291263, fbeta: 0.7066921606118548
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 0.75, recall: 0.75, fbeta: 0.75
+root - INFO - precision: 0.0, recall: 0.0, fbeta: 0.0
+root - INFO - precision: 0.5, recall: 0.3333333333333333, fbeta: 0.4
+root - INFO - precision: 0.25, recall: 0.2, fbeta: 0.22222222222222224
+root - INFO - precision: 1.0, recall: 0.16666666666666666, fbeta: 0.2857142857142857
+root - INFO - precision: 0.7878787878787878, recall: 0.8125, fbeta: 0.8
+root - INFO - precision: 0.7, recall: 1.0, fbeta: 0.8235294117647058
+root - INFO - precision: 1.0, recall: 0.75, fbeta: 0.8571428571428571
+root - INFO - precision: 1.0, recall: 0.0, fbeta: 0.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 0.6666666666666666, recall: 1.0, fbeta: 0.8
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 0.8, recall: 0.5714285714285714, fbeta: 0.6666666666666666
+root - INFO - precision: 0.6153846153846154, recall: 0.6666666666666666, fbeta: 0.64
+root - INFO - precision: 0.6, recall: 0.42857142857142855, fbeta: 0.5
+root - INFO - precision: 1.0, recall: 0.5, fbeta: 0.6666666666666666
+root - INFO - precision: 0.5, recall: 1.0, fbeta: 0.6666666666666666
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 0.25, recall: 0.3333333333333333, fbeta: 0.28571428571428575
+root - INFO - precision: 0.0, recall: 1.0, fbeta: 0.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 0.5, fbeta: 0.6666666666666666
+root - INFO - precision: 0.75, recall: 1.0, fbeta: 0.8571428571428571
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 0.5, fbeta: 0.6666666666666666
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 0.8, recall: 0.5714285714285714, fbeta: 0.6666666666666666
+root - INFO - precision: 0.0, recall: 1.0, fbeta: 0.0
+root - INFO - precision: 0.5, recall: 1.0, fbeta: 0.6666666666666666
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - precision: 1.0, recall: 1.0, fbeta: 1.0
+root - INFO - Performance on slice native_country
+root - INFO -                        feature   feature_value  n_samples  precision    recall     fbeta
+0                United-States  native_country       5835   0.787724  0.640777  0.706692
+1                     Thailand  native_country          7   1.000000  1.000000  1.000000
+2                        China  native_country         14   0.750000  0.750000  0.750000
+3                    Nicaragua  native_country         11   0.000000  0.000000  0.000000
+4                       Mexico  native_country        111   0.500000  0.333333  0.400000
+5                       Canada  native_country         28   0.250000  0.200000  0.222222
+6                        South  native_country         12   1.000000  0.166667  0.285714
+7                            ?  native_country        125   0.787879  0.812500  0.800000
+8                        India  native_country         18   0.700000  1.000000  0.823529
+9                        Italy  native_country         13   1.000000  0.750000  0.857143
+10                    Portugal  native_country          7   1.000000  0.000000  0.000000
+11                     Vietnam  native_country         15   1.000000  1.000000  1.000000
+12                 Puerto-Rico  native_country         22   0.666667  1.000000  0.800000
+13          Dominican-Republic  native_country         12   1.000000  1.000000  1.000000
+14                 El-Salvador  native_country         21   1.000000  1.000000  1.000000
+15                     Germany  native_country         28   0.800000  0.571429  0.666667
+16                 Philippines  native_country         41   0.615385  0.666667  0.640000
+17                     England  native_country         22   0.600000  0.428571  0.500000
+18                  Yugoslavia  native_country          8   1.000000  0.500000  0.666667
+19                      Poland  native_country         12   0.500000  1.000000  0.666667
+20                     Jamaica  native_country         21   1.000000  1.000000  1.000000
+21  Outlying-US(Guam-USVI-etc)  native_country          4   1.000000  1.000000  1.000000
+22                    Scotland  native_country          4   1.000000  1.000000  1.000000
+23                    Cambodia  native_country          3   1.000000  1.000000  1.000000
+24                        Iran  native_country         12   0.250000  0.333333  0.285714
+25                    Columbia  native_country         11   0.000000  1.000000  0.000000
+26                       Haiti  native_country          8   1.000000  1.000000  1.000000
+27                   Guatemala  native_country         21   1.000000  0.500000  0.666667
+28                      Taiwan  native_country          7   0.750000  1.000000  0.857143
+29                     Ecuador  native_country          3   1.000000  1.000000  1.000000
+30                        Cuba  native_country         12   1.000000  0.500000  0.666667
+31                      Greece  native_country          4   1.000000  1.000000  1.000000
+32                       Japan  native_country         16   0.800000  0.571429  0.666667
+33                      France  native_country          2   0.000000  1.000000  0.000000
+34                     Hungary  native_country          2   0.500000  1.000000  0.666667
+35                    Honduras  native_country          3   1.000000  1.000000  1.000000
+36             Trinadad&Tobago  native_country          4   1.000000  1.000000  1.000000
+37                        Peru  native_country          7   1.000000  1.000000  1.000000
+38                        Hong  native_country          3   1.000000  1.000000  1.000000
+39                     Ireland  native_country          2   1.000000  1.000000  1.000000
+40                        Laos  native_country          2   1.000000  1.000000  1.000000

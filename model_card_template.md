@@ -15,8 +15,14 @@ The dataset didn't need any complex preprocessing except for some whitespace tri
 ## Evaluation Data
 We used the test set (20% of the original dataset) to conduct our evaluation. The trained encoder and binarizer were used to transform the categorical features and target variable respectively.
 ## Metrics
-_Please include the metrics used and your model's performance on those metrics._
+We used precision, recall and fbeta as classification performance metrics. We also calculated the confusion matrix. The results were the following:
+    - precision: 0.78
+    - recall: 0.642
+    - fbeta: 0.704
+    - Confusion matrix: [[4661,  284], [ 560, 1008]]
 
 ## Ethical Considerations
-
+According to Tai Le Quy et all (https://arxiv.org/pdf/2110.00530.pdf) this dataset isn't fairness-aware.
 ## Caveats and Recommendations
+Extraction was done by Barry Becker from the 1994 Census database. Thus it is outdated and it doesn't accurately represent the current status quo of the population.
+However it can be used for training purposes in ML classification problems.
